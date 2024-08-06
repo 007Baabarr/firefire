@@ -1,0 +1,114 @@
+/* style.css */
+
+/* Reset some default browser styles */
+body, h1, input, button, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+
+/* Set base font and background color */
+body {
+    background: url(image/line_dull_pale_28256_1920x1080.jpg);
+    font-family: 'Arial', sans-serif;
+    /* background: linear-gradient(135deg, #e2e2e2, #ffffff); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for authentication forms */
+#auth_container {
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+/* Form headings */
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input fields */
+input[type="email"], input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #003d7a;
+    transform: translateY(0);
+}
+
+/* Toggle text */
+#toggle_text {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+#toggle_btn {
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#toggle_btn:hover {
+    color: #0056b3;
+}
+
+/* User container styling */
+#user_container {
+    display: none; /* Hidden by default */
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+#user_email {
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    color: #333;
+}
